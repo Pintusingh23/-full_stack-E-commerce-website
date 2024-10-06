@@ -13,11 +13,7 @@ app.use(cors());
 
 mongoose.connect("mongodb+srv://pintusingh:Pintu143@cluster0.dbbo6.mongodb.net/e-commerce");
 
-// paste your mongoDB Connection string above with password
-// password should not contain '@' special character
 
-
-//Image Storage Engine 
 const storage = multer.diskStorage({
   destination: './upload/images',
   filename: (req, file, cb) => {
